@@ -10,7 +10,7 @@ const Orders = () => {
     setLoading(true);
     setError(null);
     axios
-      .get("http://localhost:3002/allOrders")
+      .get("https://dhansetu.vercel.app/allOrders")
       .then((response) => {
         setOrders(response.data);
         setLoading(false);
